@@ -1,6 +1,10 @@
 # GPL v3 or later
 # author: Nic Freeman
 
+# given a folder containing (some pdfs/other stuff and) image files, handed in by students
+# and assuming students have used similar filenames for their own set of image files
+# convert the images to pdfs, one pdf per student
+
 import glob
 import img2pdf
 import os
