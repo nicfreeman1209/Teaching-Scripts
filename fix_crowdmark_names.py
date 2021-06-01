@@ -2,8 +2,8 @@ import glob
 import os
 import csv
 
-# take an extract from CIES containing: forename, surname, reg, email
-# place next to this file, in same dir as scripts
+# needs an extract from CIES containing: forename, surname, reg, email
+# placed next to this file, in same dir as scripts
 
 students = {} # email -> reg
 with open('cies_mime.unit_student_profile') as students_file:                                                                                          
