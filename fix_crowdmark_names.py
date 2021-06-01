@@ -2,6 +2,8 @@ import glob
 import os
 import csv
 
+# renames Crowdmarks pdfs to registration numbers
+
 # needs an extract from CIES containing: forename, surname, reg, email
 # placed next to this file, in same dir as scripts
 
