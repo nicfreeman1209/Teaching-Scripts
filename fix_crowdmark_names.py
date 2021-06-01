@@ -8,7 +8,6 @@ import csv
 students = {} # email -> reg
 with open('cies_mime.unit_student_profile') as students_file:                                                                                          
 	students_csv = csv.reader(students_file, delimiter='\t')
-	(students_csv)
 	for line in students_csv:
 		students[line[3].lower()] = line[2]
 
