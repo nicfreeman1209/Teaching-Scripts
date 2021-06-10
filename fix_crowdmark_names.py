@@ -15,9 +15,14 @@ with open('cies_mime.unit_student_profile') as students_file:
 
 files = glob.glob("*.pdf")
 for file in files:
-	s = file.split("_")
-	forename = s[0]
-	surname = s[1]
-	email =s[2] + ".ac.uk"
-	reg = students[email]
-	os.rename(file, reg + ".pdf")
+	try:
+		f = file[:-10]
+		print(file)
+		f, email = f.rsplit("_", 1)
+		surname, forename = f.split("_", 1)
+		email += ".ac.uk"
+		reg = students[email]
+		print(forename, surname, email, reg)
+		os.rename(file, reg + ".pdf")
+	except:
+		print("WARNING:", file)
